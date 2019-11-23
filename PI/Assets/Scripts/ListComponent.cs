@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class ListComponent : MonoBehaviour
 {
-
     static private ListComponent selected = null;
     private Color colorStart;
-    private Camera detailCamera;
+    static private Camera detailCamera;
 
     public Color getColorStart()
     {
@@ -50,7 +49,7 @@ public class ListComponent : MonoBehaviour
         else if (selected == this)
         {
             selected = null;
-            gameObject.GetComponent<MeshRenderer>().material.color = colorStart;
+            gameObject.GetComponent<MeshRenderer>().material.color = Color.yellow;
             detailCamera.enabled = false;
         }
         else
