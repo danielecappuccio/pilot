@@ -8,6 +8,9 @@ public class ListComponent : MonoBehaviour
     private Color colorStart;
     static private Camera detailCamera;
 
+    [SerializeField]
+    private GameObject linkedComponent;
+
     public Color getColorStart()
     {
         return colorStart;
@@ -44,7 +47,9 @@ public class ListComponent : MonoBehaviour
         {
             selected = this;
             gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
+            detailCamera.transform.position = linkedComponent.transform.position + new Vector3(0, 0, -50);
             detailCamera.enabled = true;
+
         }
         else if (selected == this)
         {
@@ -57,6 +62,7 @@ public class ListComponent : MonoBehaviour
             selected.GetComponent<MeshRenderer>().material.color = selected.getColorStart();
             selected = this;
             gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
+            detailCamera.transform.position = linkedComponent.transform.position + new Vector3(0, 0, -50);
         }
     }
 }
