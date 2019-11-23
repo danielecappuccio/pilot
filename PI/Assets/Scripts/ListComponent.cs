@@ -47,7 +47,7 @@ public class ListComponent : MonoBehaviour
         {
             selected = this;
             gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
-            detailCamera.transform.position = linkedComponent.transform.position + new Vector3(0, 0, -50);
+            detailCamera.transform.position = linkedComponent.transform.position + new Vector3(0, 0, -60);
             detailCamera.enabled = true;
 
         }
@@ -62,7 +62,7 @@ public class ListComponent : MonoBehaviour
             selected.GetComponent<MeshRenderer>().material.color = selected.getColorStart();
             selected = this;
             gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
-            detailCamera.transform.position = linkedComponent.transform.position + new Vector3(0, 0, -50);
+            detailCamera.transform.position = linkedComponent.transform.position + new Vector3(0, 0, -60);
         }
     }
 }
