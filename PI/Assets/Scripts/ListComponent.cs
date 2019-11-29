@@ -7,6 +7,7 @@ public class ListComponent : MonoBehaviour
     static private ListComponent selected = null;
     private Color colorStart;
     static private Camera detailCamera;
+    private VLWorkerBehaviour worker;
 
     [SerializeField]
     private GameObject linkedComponent;
@@ -31,8 +32,8 @@ public class ListComponent : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (this != selected)
-            gameObject.GetComponent<MeshRenderer>().material.color = Color.yellow;
+        worker = gameObject.GetComponent<VLWorkerBehaviour>();
+        worker.StartTracking("Examples\\ModelTracking\\car.vl");
     }
 
     private void OnMouseExit()

@@ -1,0 +1,40 @@
+{
+    "type": "VisionLibTrackerConfig",
+    "version": 1,
+    "meta": {
+        "name": "Simple Visionlib Car Tracker",
+        "description": "Simple model tracking configuration file",
+        "author": "VisionLib"
+    },
+    "tracker": {
+        "type": "modelTracker",
+        "version": 1,
+        "parameters": {
+            "modelURI": "project_dir:Bar.fbx",
+            "useColor": true,
+            "metric": "m",
+            "initPose": {
+                "type": "visionlib",
+                "t": [
+                    0.00367148220539093,
+                    -0.006567094475030899,
+                    0.3096649944782257
+                ],
+                "q": [
+                    -0.2766149640083313,
+                    -0.38819393515586855,
+                    0.8737499713897705,
+                    0.09669879078865051
+                ]
+            },
+            "showLineModel":true,
+            "keyFrameDistance": 5,
+            "laplaceThreshold": 1,
+            "normalThreshold": 0.3,
+            "minInlierRatioInit": 0.7,
+            "minInlierRatioTracking": 0.6,
+            "extendibleTracking": false,
+            "lineSearchLengthInitRelative": 0.05
+        }
+    }
+}
