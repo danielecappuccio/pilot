@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ListComponent : MonoBehaviour
 {
@@ -32,8 +33,7 @@ public class ListComponent : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        worker = gameObject.GetComponent<VLWorkerBehaviour>();
-        worker.StartTracking("Examples\\ModelTracking\\car.vl");
+        // TODO: l'ho cancellata per sbaglio, perdonami Paolo <3
     }
 
     private void OnMouseExit()
@@ -65,5 +65,8 @@ public class ListComponent : MonoBehaviour
             gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
             detailCamera.transform.position = linkedComponent.transform.position + new Vector3(0, 0, -60);
         }
+
+        // load tracking scene
+        SceneManager.LoadScene("SimpleModelTrackerExample");
     }
 }
