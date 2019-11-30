@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/VisionLib/Examples/ModelTracking/SimpleModelTracking/SimpleModelTrackerExample.unity
+    guid: 0ca74f4cb1316334fb3a9e67c48876a0
   m_configObjects: {}

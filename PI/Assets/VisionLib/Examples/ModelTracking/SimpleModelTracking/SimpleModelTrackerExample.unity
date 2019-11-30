@@ -251,6 +251,14 @@ PrefabInstance:
       propertyPath: field of view
       value: 53.950092
       objectReference: {fileID: 0}
+    - target: {fileID: 2092224, guid: 0f76911e949fd8e44a24e729519b6f63, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2092224, guid: 0f76911e949fd8e44a24e729519b6f63, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f76911e949fd8e44a24e729519b6f63, type: 3}
 --- !u!1001 &175116081
@@ -5246,12 +5254,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f4b2806c97590334787e42a6c6f4c583,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 144.6
+      value: 168
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f4b2806c97590334787e42a6c6f4c583,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.3
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f4b2806c97590334787e42a6c6f4c583,
         type: 3}
@@ -5298,6 +5306,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: f4b2806c97590334787e42a6c6f4c583,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ca1927104af54c43a9ef70642d34cef, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4b2806c97590334787e42a6c6f4c583, type: 3}
 --- !u!1001 &1934461441
@@ -5775,6 +5788,14 @@ PrefabInstance:
     - target: {fileID: 2019542, guid: f17fb07aa1d1da542ba8bc03f8d871cc, type: 3}
       propertyPath: field of view
       value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: 2019542, guid: f17fb07aa1d1da542ba8bc03f8d871cc, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2019542, guid: f17fb07aa1d1da542ba8bc03f8d871cc, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f17fb07aa1d1da542ba8bc03f8d871cc, type: 3}
