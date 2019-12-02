@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<licenses>
+ <license expiredate="30.01.2020" name="Vision" version="2.00" zkey="kwADAgAUkrtttv3pUc+xFsBmHWE1188f15sAFAEy7NnbWEpUn++052rB0WHGoPSt">
+  <comment>Created by tengelke</comment>
+  <user>
+   <organization>Nematollahi AR</organization>
+   <street>via Arnaldo da Brescia, 12</street>
+   <city>Torino</city>
+   <country>IT</country>
+   <contact>nem.amir@gmail.com</contact>
+  </user>
+  <hosts>
+   <host id="ANY" name="Allow any ID"/>
+  </hosts>
+  <features>
+   <feature name="ANY"/>
+   <feature name="licenseType" value="academicSDK"/>
+   <feature name="feature:NumberOfStartsPerDeployment" value="0"/>
+   <feature name="feature:AllowUnlimitedModels"/>
+   <feature name="feature:AllowUnregisteredModels"/>
+   <feature name="feature:AllowDeviceiOS"/>
+   <feature name="feature:AllowDeviceAndroid"/>
+   <feature name="feature:AllowDeviceWindows"/>
+   <feature name="feature:AllowDeviceMacOS"/>
+   <feature name="featureBundle:Basic"/>
+  </features>
+ </license>
+</licenses>
