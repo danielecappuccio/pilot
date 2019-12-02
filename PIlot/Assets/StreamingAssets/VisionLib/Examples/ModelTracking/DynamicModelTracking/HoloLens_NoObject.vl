@@ -1,0 +1,52 @@
+{
+    "type": "VisionLibTrackerConfig",
+    "version": 1,
+    "meta": {
+        "name": "Empty Visionlib Model Tracker",
+        "description": "Model tracking configuration file without model definition",
+        "author": "Visometry"
+    },
+    "tracker": {
+        "type": "hololensModelTracker",
+        "version": 1,
+        "parameters": {
+            "useColor": true,
+            "metric": "m",
+            "initPose": {
+                "type": "visionlib",
+                "t": [
+                    -0.0746312290430069,
+                    0.011892981827259064,
+                    0.6665499210357666
+                ],
+                "q": [
+                    -0.266575425863266,
+                    -0.3912331759929657,
+                    0.876720666885376,
+                    0.08505914360284805
+                ]
+            },
+            "keyFrameDistance": 5,
+            "laplaceThreshold": 1,
+            "normalThreshold": 0.3,
+            "minInlierRatioInit": 0.7,
+            "minInlierRatioTracking": 0.6,
+            "extendibleTracking": false,
+            "lineSearchLengthInitRelative": 0.05,
+            "showLineModel": true 
+        }
+    },
+        "input": {
+        "useImageSource": "cameraHololens",
+        "imageSources": [{
+            "name": "cameraHololens",
+            "type": "camera",
+            "data": {
+                "undistort": true,
+                "scale": 0.5,
+                "cameramode": 0,
+                "framerate": 30
+            }
+        }]
+    }
+}

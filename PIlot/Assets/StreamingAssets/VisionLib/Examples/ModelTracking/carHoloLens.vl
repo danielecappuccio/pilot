@@ -1,0 +1,56 @@
+{
+    "type": "VisionLibTrackerConfig",
+    "version": 1,
+    "meta": {
+        "name": "Simple Visionlib Car Tracker for HoloLens",
+        "description": "Simple model tracking configuration file",
+        "author": "VisionLib"
+    },
+    "tracker": {
+        "type": "hololensModelTracker",
+        "version": 1,
+        "parameters": {
+            "modelURI": "project_dir:car.obj",
+            "useColor": false,
+            "metric": "m",
+            "initPose": {
+                "type": "visionlib",
+                "t": [
+                    -0.0746312290430069,
+                    0.011892981827259064,
+                    0.6665499210357666
+                ],
+                "q": [
+                    -0.266575425863266,
+                    -0.3912331759929657,
+                    0.876720666885376,
+                    0.08505914360284805
+                ]
+            },
+            "keyFrameDistance": 50,
+            "laplaceThreshold": 1,
+            "normalThreshold": 0.3,
+            "minInlierRatioInit": 0.7,
+            "minInlierRatioTracking": 0.6,
+            "lineSearchLengthTrackingRelative": 0.04,
+            "maxFramesFeaturePrediction": 3,
+            "showLineModel": true,
+            "showLineModelCriticalColor": [255, 0, 127],
+            "staticScene": false,
+            "debugLevel": 0
+        }
+    },
+    "input": {
+        "useImageSource": "cameraHololens",
+        "imageSources": [{
+            "name": "cameraHololens",
+            "type": "camera",
+            "data": {
+                "undistort": true,
+                "scale": 0.5,
+                "cameramode": 0,
+                "framerate": 30
+            }
+        }]
+    }
+}
