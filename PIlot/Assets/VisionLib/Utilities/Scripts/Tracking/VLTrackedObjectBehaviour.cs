@@ -64,7 +64,7 @@ public class VLTrackedObjectBehaviour : MonoBehaviour
     public OnLostEvent justLostEvent;
 
     private string trackedObjectName = "TrackedObject";
-    private string previousState;
+    public string previousState;
 
     void HandleTrackerInitializing()
     {
