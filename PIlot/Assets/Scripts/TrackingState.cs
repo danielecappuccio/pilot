@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class TrackingState : MonoBehaviour
 {
+    [SerializeField]
     private int TARGET = 30;
+
     private string state;
     private int counter = 0;
+
+    [SerializeField]
+    private ListComponent listComponent;
 
     void FixedUpdate()
     {
