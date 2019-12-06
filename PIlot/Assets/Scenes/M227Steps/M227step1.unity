@@ -591,59 +591,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbef1255df1ea2447bbe22a6d1004a8d, type: 3}
---- !u!1 &304199833 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e34b65cb14a983f4abe00bb960951c29,
-    type: 3}
-  m_PrefabInstance: {fileID: 69462929}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &304199834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304199833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbe9de770fdd1fc40b89a3d415df807f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TARGET: 30
-  listComponent: {fileID: 0}
-  next: {fileID: 0}
-  parent: {fileID: 0}
---- !u!114 &304199835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304199833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc5caf7f6ce56204889693b564eacee0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  justTrackedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  criticalEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  justCriticalEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  lostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  justLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  previousState: 
 --- !u!1 &385677169
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vlFile: noObject.vl
+  assembly: {fileID: 0}
 --- !u!114 &483817204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1938,8 +1886,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TARGET: 30
   listComponent: {fileID: 1499379939}
-  next: {fileID: 1261753038}
-  parent: {fileID: 483817203}
 --- !u!114 &1258535815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2458,6 +2404,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragSensitivity: 0.3
+--- !u!114 &1475658443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475658438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5caf7f6ce56204889693b564eacee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  justTrackedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  criticalEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  justCriticalEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  lostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  justLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  previousState: 
+--- !u!114 &1475658444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475658438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbe9de770fdd1fc40b89a3d415df807f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TARGET: 30
+  listComponent: {fileID: 1261753038}
 --- !u!1 &1490919482
 GameObject:
   m_ObjectHideFlags: 0
@@ -3266,7 +3257,6 @@ GameObject:
   - component: {fileID: 2107719549}
   - component: {fileID: 2107719548}
   - component: {fileID: 2107719551}
-  - component: {fileID: 2107719552}
   m_Layer: 0
   m_Name: StepModel
   m_TagString: Untagged
@@ -3336,22 +3326,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &2107719552
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107719547}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 7cad47e84cee243449ef40b5b6041ac1, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 7cad47e84cee243449ef40b5b6041ac1, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &2125869946 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e34b65cb14a983f4abe00bb960951c29,
@@ -3419,8 +3393,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TARGET: 30
   listComponent: {fileID: 1824351077}
-  next: {fileID: 1499379939}
-  parent: {fileID: 483817203}
 --- !u!114 &2125869952
 MonoBehaviour:
   m_ObjectHideFlags: 0

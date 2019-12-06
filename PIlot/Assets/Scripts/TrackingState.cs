@@ -13,10 +13,6 @@ public class TrackingState : MonoBehaviour
 
     [SerializeField]
     private ListComponent listComponent;
-    [SerializeField]
-    private ListComponent next;
-    [SerializeField]
-    private ListParent parent;
 
 
     void FixedUpdate()
@@ -39,9 +35,6 @@ public class TrackingState : MonoBehaviour
         }
 
         if (counter == TARGET)
-        {
-            listComponent.SetRecognized(true);
-            parent.changeSelection(next);
-        }
+            listComponent.SetRecognized();
     }
 }

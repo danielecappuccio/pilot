@@ -24,24 +24,31 @@ public class ListComponent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        this.GetComponentInParent<ListParent>().addComponent(this);
         bool tmp = isSelected;
         this.SetState(false);
         if (tmp)
             this.ChangeState();
     }
 
-    public void SetRecognized(bool recognized)
+    public void SetRecognized()
     {
-        isRecognized = recognized;
-        if (isRecognized)
-        {
-            image.color = recognizedColor;
-            trackableObj.SetActive(false);
-        }
+        isRecognized = true;
+        image.color = recognizedColor;
+        trackableObj.SetActive(false);
+        this.GetComponentInParent<ListParent>().recognizeNext();
+    }
+
+    public bool GetRecognized()
+    {
+        return isRecognized;
     }
 
     public void SetState(bool selected)
     {
+        if (isRecognized)
+            return;
+
         isSelected = selected;
         if (isSelected)
         {
