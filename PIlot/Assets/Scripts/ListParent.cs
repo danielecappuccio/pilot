@@ -13,8 +13,8 @@ public class ListParent : MonoBehaviour
 
     public void changeSelection(ListComponent selected)
     {
-        if (activeComponent != null)
-            activeComponent.SetState(false);
+        // if (activeComponent != null)
+        //     activeComponent.SetState(false);
         activeComponent = selected;
         activeComponent.SetState(true);
     }

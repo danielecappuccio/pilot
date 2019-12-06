@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TrackingState : MonoBehaviour
 {
@@ -12,6 +13,11 @@ public class TrackingState : MonoBehaviour
 
     [SerializeField]
     private ListComponent listComponent;
+    [SerializeField]
+    private ListComponent next;
+    [SerializeField]
+    private ListParent parent;
+
 
     void FixedUpdate()
     {
@@ -34,8 +40,8 @@ public class TrackingState : MonoBehaviour
 
         if (counter == TARGET)
         {
-            print("Tracked");
-            // TODO
+            listComponent.SetRecognized(true);
+            parent.changeSelection(next);
         }
     }
 }

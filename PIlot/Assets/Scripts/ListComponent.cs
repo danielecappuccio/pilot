@@ -30,6 +30,16 @@ public class ListComponent : MonoBehaviour
             this.ChangeState();
     }
 
+    public void SetRecognized(bool recognized)
+    {
+        isRecognized = recognized;
+        if (isRecognized)
+        {
+            image.color = recognizedColor;
+            trackableObj.SetActive(false);
+        }
+    }
+
     public void SetState(bool selected)
     {
         isSelected = selected;
