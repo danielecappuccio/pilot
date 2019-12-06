@@ -12,7 +12,7 @@ public class ListParent : MonoBehaviour
     private ListComponent activeComponent = null;
     private List<ListComponent> components = new List<ListComponent>();
     [SerializeField]
-    private ListComponent assembly;
+    private TrackingAssembly     assembly;
 
     public void addComponent(ListComponent listComponent)
     {
@@ -25,6 +25,16 @@ public class ListParent : MonoBehaviour
             activeComponent.SetState(false);
         activeComponent = selected;
         activeComponent.SetState(true);
+    }
+
+    public void changeSelection(TrackingAssembly selected)
+    {
+        if (activeComponent != null)
+            activeComponent.SetState(false);
+        activeComponent = null;
+        selected.gameObject.SetActive(true);
+        selected.transform.rotation = Quaternion.identity;
+        selected.GetComponent<VLModelTrackableBehaviour>().UpdateTransformation(true);
     }
 
     public void recognizeNext()

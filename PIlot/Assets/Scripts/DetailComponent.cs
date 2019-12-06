@@ -6,7 +6,6 @@ public class DetailComponent : MonoBehaviour
 {
 
     private Vector3 mouseReference;
-    private bool isDragging = false;
     private float sensitivityFactor = 0.01f;
 
     [SerializeField]
@@ -22,15 +21,9 @@ public class DetailComponent : MonoBehaviour
     {
     }
 
-    private void OnMouseExit()
-    {
-        isDragging = false;
-    }
-
     private void OnMouseDown()
     {
         mouseReference = Input.mousePosition;
-        isDragging = true;
     }
 
     private void OnMouseDrag()

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TrackingState : MonoBehaviour
+public class TrackingAssembly : MonoBehaviour
 {
     [SerializeField]
     private int TARGET = 30;
@@ -11,8 +11,14 @@ public class TrackingState : MonoBehaviour
     private string state;
     private int counter = 0;
 
+    private SceneChanger sceneChanger;
     [SerializeField]
-    private ListComponent listComponent;
+    private int scene;
+
+    private void Start()
+    {
+        sceneChanger = GetComponent<SceneChanger>();
+    }
 
     void FixedUpdate()
     {
@@ -34,6 +40,6 @@ public class TrackingState : MonoBehaviour
         }
 
         if (counter == TARGET)
-            listComponent.SetRecognized();
+            sceneChanger.changeScene(scene);
     }
 }
