@@ -440,6 +440,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135380823}
   m_CullTransparentMesh: 0
+--- !u!20 &156111931 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2019542, guid: f17fb07aa1d1da542ba8bc03f8d871cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 922719105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &246552481
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,17 +558,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: cbef1255df1ea2447bbe22a6d1004a8d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cbef1255df1ea2447bbe22a6d1004a8d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cbef1255df1ea2447bbe22a6d1004a8d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cbef1255df1ea2447bbe22a6d1004a8d,
         type: 3}
@@ -588,6 +594,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5975033157549033438, guid: cbef1255df1ea2447bbe22a6d1004a8d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5975033157549033438, guid: cbef1255df1ea2447bbe22a6d1004a8d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5975033157549033438, guid: cbef1255df1ea2447bbe22a6d1004a8d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8660254
+      objectReference: {fileID: 0}
+    - target: {fileID: -5975033157549033438, guid: cbef1255df1ea2447bbe22a6d1004a8d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5975033157549033438, guid: cbef1255df1ea2447bbe22a6d1004a8d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5975033157549033438, guid: cbef1255df1ea2447bbe22a6d1004a8d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbef1255df1ea2447bbe22a6d1004a8d, type: 3}
@@ -862,7 +898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vlFile: noObject.vl
-  assembly: {fileID: 0}
+  assembly: {fileID: 1646264103}
 --- !u!114 &483817204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1329,6 +1365,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11458550, guid: f17fb07aa1d1da542ba8bc03f8d871cc, type: 3}
+      propertyPath: initCamera
+      value: 
+      objectReference: {fileID: 156111931}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f17fb07aa1d1da542ba8bc03f8d871cc, type: 3}
 --- !u!4 &929336698 stripped

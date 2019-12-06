@@ -11,10 +11,4 @@ public class SetText : MonoBehaviour
     {
         gameObject.GetComponent<Text>().text = "Hi, " + UserID.name + "!";
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
