@@ -49,7 +49,7 @@ public class ListComponent : MonoBehaviour
             
             trackableObj.SetActive(true);
             trackableObj.transform.rotation = Quaternion.identity;
-            gameObject.GetComponent<VLModelTrackableBehaviour>().UpdateTransformation(true);
+            trackableObj.GetComponent<VLModelTrackableBehaviour>().UpdateTransformation(true);
         }
         else
         {
