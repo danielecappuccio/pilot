@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/M227Steps/M227step1.unity
     guid: fa5735c61004ac74d8e7e5407a633b1a
+  - enabled: 1
+    path: Assets/Scenes/M227Steps/M227step2.unity
+    guid: 3ba7b8b229958c746b3f404ebb006f88
   m_configObjects: {}
