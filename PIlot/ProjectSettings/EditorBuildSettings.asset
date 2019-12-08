@@ -21,6 +21,24 @@ EditorBuildSettings:
     path: Assets/Scenes/LinearActuatorsScene.unity
     guid: 89d99bcc62a514b40ac35a55da6a0f38
   - enabled: 1
-    path: Assets/Scenes/A_model/M227step1.unity
-    guid: f9fa97d617595974db71470555e60fc4
+    path: Assets/Scenes/A_model/A_1.unity
+    guid: ad949349f7dd68d44ac65c164f991b36
+  - enabled: 1
+    path: Assets/Scenes/A_model/A_2.unity
+    guid: 6ceb8d3cd2d574e4a9c00971e2474b3c
+  - enabled: 1
+    path: Assets/Scenes/A_model/A_3.unity
+    guid: 598ce4c1844af7047aecc8c034736ee4
+  - enabled: 1
+    path: Assets/Scenes/A_model/CompletedScene.unity
+    guid: 28334aebbaa873e42a24aeed2a355f1e
+  - enabled: 1
+    path: Assets/Scenes/B_model/B_1.unity
+    guid: f52bfb3bd4f6d9e409672aad12bd5eff
+  - enabled: 1
+    path: Assets/Scenes/B_model/B_2.unity
+    guid: 9bf48d4bcfdf6704483625d876e4f722
+  - enabled: 1
+    path: Assets/Scenes/B_model/BCompletedScene.unity
+    guid: 8495d1fe800fb04489a5c6b31de12b01
   m_configObjects: {}
