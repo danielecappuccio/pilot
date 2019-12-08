@@ -11,12 +11,12 @@
         "version": 1,
         "parameters": {
             "useColor": true,
-            "metric": "m",
+            "metric": "cm",
             "keyFrameDistance": 5,
-            "laplaceThreshold": 1,
-            "normalThreshold": 0.3,
+            "laplaceThreshold": 0.1,
+            "normalThreshold": 3,
             "minInlierRatioInit": 0.7,
-            "minInlierRatioTracking": 0.6,
+            "minInlierRatioTracking": 0.64,
             "extendibleTracking": false,
             "lineSearchLengthInitRelative": 0.05,
             "showLineModel": true

@@ -15,12 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/ProductFinderScene.unity
     guid: 229c9c19cc7e80944bcf01d517205dc5
   - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: c9106361441f0c0459617a500c06c530
+  - enabled: 1
     path: Assets/Scenes/LinearActuatorsScene.unity
     guid: 89d99bcc62a514b40ac35a55da6a0f38
   - enabled: 1
-    path: Assets/Scenes/M227Steps/M227step1.unity
-    guid: fa5735c61004ac74d8e7e5407a633b1a
-  - enabled: 1
-    path: Assets/Scenes/M227Steps/M227step2.unity
-    guid: 3ba7b8b229958c746b3f404ebb006f88
+    path: Assets/Scenes/A_model/M227step1.unity
+    guid: f9fa97d617595974db71470555e60fc4
   m_configObjects: {}
