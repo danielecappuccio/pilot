@@ -16,7 +16,7 @@ public class ListComponent : MonoBehaviour
     [SerializeField]
     private Color unselectedColor = Color.red;
     [SerializeField]
-    private Color recognizedColor = Color.green;
+    private Color recognizedColor = new Color(44, 195, 159);
 
     [SerializeField]
     private GameObject trackableObj;
