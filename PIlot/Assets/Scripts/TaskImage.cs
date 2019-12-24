@@ -9,6 +9,11 @@ public class TaskImage : MonoBehaviour
 
     private bool isOpen = false;
 
+    public bool getOpen()
+    {
+        return isOpen;
+    }
+
     public void TaskSelect()
     {
         if (isOpen)

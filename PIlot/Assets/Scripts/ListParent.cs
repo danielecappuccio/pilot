@@ -35,6 +35,7 @@ public class ListParent : MonoBehaviour
         selected.gameObject.SetActive(true);
         selected.transform.rotation = Quaternion.identity;
         selected.GetComponent<VLModelTrackableBehaviour>().UpdateTransformation(true);
+        gameObject.GetComponent<StartTrackingWithCameraSelectionBehaviour>().StartTracking(vlFile);
     }
 
     public void recognizeNext()
@@ -48,6 +49,8 @@ public class ListParent : MonoBehaviour
             }
         }
 
+        if (!FindObjectOfType<TaskImage>().getOpen())
+            FindObjectOfType<TaskImage>().TaskSelect();
         changeSelection(assembly);
     }
 
