@@ -10,6 +10,7 @@ public class ListComponent : MonoBehaviour
 
     public bool isSelected = false;
     private bool isRecognized = false;
+    public bool isScrew = false;
 
     [SerializeField]
     private Color selectedColor = Color.yellow;

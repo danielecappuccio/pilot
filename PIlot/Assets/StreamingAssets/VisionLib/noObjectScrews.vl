@@ -1,0 +1,25 @@
+{
+    "type": "VisionLibTrackerConfig",
+    "version": 1,
+    "meta": {
+        "name": "Empty Visionlib Model Tracker",
+        "description": "Model tracking configuration file without model definition",
+        "author": "Visometry"
+    },
+    "tracker": {
+        "type": "modelTracker",
+        "version": 1,
+        "parameters": {
+            "useColor": true,
+            "metric": "dm",
+            "keyFrameDistance": 5,
+            "laplaceThreshold": 2,
+            "normalThreshold": 1,
+            "minInlierRatioInit": 0.72,
+            "minInlierRatioTracking": 0.66,
+            "extendibleTracking": false,
+            "lineSearchLengthInitRelative": 0.06,
+            "showLineModel": true
+        }
+    }
+}

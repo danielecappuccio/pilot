@@ -555,6 +555,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: fd1b51da2d238d543a33f4b1faa39a41, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: fd1b51da2d238d543a33f4b1faa39a41, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: fd1b51da2d238d543a33f4b1faa39a41, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: fd1b51da2d238d543a33f4b1faa39a41, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -839,6 +851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vlFile: noObject.vl
+  vlFileScrew: noObjectScrews.vl
   assembly: {fileID: 3759452433697657076}
 --- !u!114 &483817204
 MonoBehaviour:
@@ -1717,6 +1730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1035646819}
   isSelected: 1
+  isScrew: 0
   selectedColor: {r: 1, g: 1, b: 0, a: 1}
   unselectedColor: {r: 1, g: 0, b: 0, a: 1}
   recognizedColor: {r: 0, g: 1, b: 0, a: 1}
@@ -2033,6 +2047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1355729715}
   isSelected: 1
+  isScrew: 0
   selectedColor: {r: 1, g: 1, b: 0, a: 1}
   unselectedColor: {r: 1, g: 0, b: 0, a: 1}
   recognizedColor: {r: 0, g: 1, b: 0, a: 1}
@@ -2652,6 +2667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1824351075}
   isSelected: 1
+  isScrew: 0
   selectedColor: {r: 1, g: 1, b: 0, a: 1}
   unselectedColor: {r: 1, g: 0, b: 0, a: 1}
   recognizedColor: {r: 0, g: 1, b: 0, a: 1}
@@ -2765,6 +2781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 2100681126}
   isSelected: 1
+  isScrew: 1
   selectedColor: {r: 1, g: 1, b: 0, a: 1}
   unselectedColor: {r: 1, g: 0, b: 0, a: 1}
   recognizedColor: {r: 0, g: 1, b: 0, a: 1}

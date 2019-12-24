@@ -653,6 +653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 402583513}
   isSelected: 1
+  isScrew: 0
   selectedColor: {r: 1, g: 1, b: 0, a: 1}
   unselectedColor: {r: 1, g: 0, b: 0, a: 1}
   recognizedColor: {r: 0, g: 1, b: 0, a: 1}
@@ -875,6 +876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vlFile: noObject.vl
+  vlFileScrew: noObjectScrews.vl
   assembly: {fileID: 8940442134284816113}
 --- !u!114 &483817204
 MonoBehaviour:
@@ -1503,6 +1505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1035646819}
   isSelected: 1
+  isScrew: 0
   selectedColor: {r: 1, g: 1, b: 0, a: 1}
   unselectedColor: {r: 1, g: 0, b: 0, a: 1}
   recognizedColor: {r: 0, g: 1, b: 0, a: 1}
@@ -2076,6 +2079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1355729715}
   isSelected: 1
+  isScrew: 0
   selectedColor: {r: 1, g: 1, b: 0, a: 1}
   unselectedColor: {r: 1, g: 0, b: 0, a: 1}
   recognizedColor: {r: 0, g: 1, b: 0, a: 1}
@@ -2637,6 +2641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 2100681126}
   isSelected: 1
+  isScrew: 1
   selectedColor: {r: 1, g: 1, b: 0, a: 1}
   unselectedColor: {r: 1, g: 0, b: 0, a: 1}
   recognizedColor: {r: 0, g: 1, b: 0, a: 1}

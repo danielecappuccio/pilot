@@ -8,11 +8,15 @@ public class ListParent : MonoBehaviour
 
     [SerializeField]
     private string vlFile;
+    [SerializeField]
+    private string vlFileScrew;
 
     private ListComponent activeComponent = null;
     private List<ListComponent> components = new List<ListComponent>();
     [SerializeField]
     private TrackingAssembly     assembly;
+
+    private bool lastScrew = false;
 
     public void addComponent(ListComponent listComponent)
     {
@@ -25,6 +29,16 @@ public class ListParent : MonoBehaviour
             activeComponent.SetState(false);
         activeComponent = selected;
         activeComponent.SetState(true);
+        if (selected.isScrew && !lastScrew)
+        {
+            lastScrew = true;
+            gameObject.GetComponent<StartTrackingWithCameraSelectionBehaviour>().StartTracking(vlFileScrew);
+        }
+        else if (!selected.isScrew && lastScrew)
+        {
+            lastScrew = false;
+            gameObject.GetComponent<StartTrackingWithCameraSelectionBehaviour>().StartTracking(vlFile);
+        }
     }
 
     public void changeSelection(TrackingAssembly selected)
@@ -35,7 +49,8 @@ public class ListParent : MonoBehaviour
         selected.gameObject.SetActive(true);
         selected.transform.rotation = Quaternion.identity;
         selected.GetComponent<VLModelTrackableBehaviour>().UpdateTransformation(true);
-        gameObject.GetComponent<StartTrackingWithCameraSelectionBehaviour>().StartTracking(vlFile);
+        if(lastScrew)
+            gameObject.GetComponent<StartTrackingWithCameraSelectionBehaviour>().StartTracking(vlFile);
     }
 
     public void recognizeNext()
