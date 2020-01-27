@@ -49,8 +49,10 @@ public class ListParent : MonoBehaviour
         selected.gameObject.SetActive(true);
         selected.transform.rotation = Quaternion.identity;
         selected.GetComponent<VLModelTrackableBehaviour>().UpdateTransformation(true);
-        if(lastScrew)
-            gameObject.GetComponent<StartTrackingWithCameraSelectionBehaviour>().StartTracking(vlFile);
+        lastScrew = true;
+        gameObject.GetComponent<StartTrackingWithCameraSelectionBehaviour>().StartTracking(vlFileScrew);
+        //        if(lastScrew)
+        //            gameObject.GetComponent<StartTrackingWithCameraSelectionBehaviour>().StartTracking(vlFile);
     }
 
     public void recognizeNext()

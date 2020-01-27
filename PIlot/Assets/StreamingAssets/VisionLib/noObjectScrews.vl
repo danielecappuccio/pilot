@@ -15,8 +15,8 @@
             "keyFrameDistance": 5,
             "laplaceThreshold": 2,
             "normalThreshold": 1,
-            "minInlierRatioInit": 0.72,
-            "minInlierRatioTracking": 0.66,
+            "minInlierRatioInit": 0.68,
+            "minInlierRatioTracking": 0.62,
             "extendibleTracking": false,
             "lineSearchLengthInitRelative": 0.06,
             "showLineModel": true
